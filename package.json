@@ -1,0 +1,20 @@
+{
+  "name": "get-github-info",
+  "version": "1.0.0",
+  "description": "fetching some info from the personal github space",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node out/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrey M Stepanov",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.157",
+    "@types/request": "^2.48.5"
+  }
+}
