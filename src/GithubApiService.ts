@@ -20,7 +20,7 @@ export class GithubApiService {
             /* either JSON.parse or add 'json' header
             let user = new User(JSON.parse(body)); */
             let user = new User(body);
-            console.log(user);
+            //console.log(user);
             
         })
     }
