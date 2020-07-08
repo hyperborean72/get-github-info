@@ -18,7 +18,7 @@ export class GithubApiService {
         request.get('https://api.github.com/users/' + username, options, (error: any, response: request.Response, body: any) => {
             // console.log(response);
             // console.error();
-            console.log(body);
+            //console.log(body);
             /* either JSON.parse or add 'json' header
             let user = new User(JSON.parse(body)); */
             let user = new User(body);
@@ -29,7 +29,7 @@ export class GithubApiService {
     getReposInfo(username: string, callbackFn: (repos: Repo[]) => any) {        
 
         request.get('https://api.github.com/users/' + username + '/repos', options, (error: any, response: request.Response, body: any[]) => {
-            console.log(body);
+            //console.log(body);
             let repos: Repo[] = body.map(repo => new Repo(repo));
             callbackFn(repos);            
         })
